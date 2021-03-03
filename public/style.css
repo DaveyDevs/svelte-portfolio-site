@@ -1,0 +1,525 @@
+/* @import url("https://fonts.googleapis.com/css?family=Lora:400|Yeseva+One:400"); */
+/* @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400|Amaranth:400"); */
+@import url("https://fonts.googleapis.com/css?family=Cabin:400|Raleway:800");
+:root {
+  --baseFontSize: 100%;
+  /*16px*/
+  /* Define colors as colors */
+  --green: #00dbc1;
+  --red: #DB3000;
+  --yellow: #fde24f;
+  --black: #1b2d45;
+  --darkBlue: #00214d;
+  --grey: #bfbfbf;
+  --white: #fffffe;
+  /* Define Colors intentions */
+  --primary: var(--green);
+  --secondary: var(--red);
+  --danger: var(--red);
+  --background: var(--white);
+  --textColor: var(--black);
+  --lineColor: var(--black);
+  --cardBg: var(--white);
+  --headerBackground: var(--white);
+  --footerBackground: var(--white);
+  --blockQuote: var(--black);
+  --blockQuoteText: var(--white);
+  /* Type */
+  --headingFont: "Raleway", sans-serif;
+  --bodyFont: "Cabin", sans-serif;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --p: 1.15rem;
+  --textSmall: 0.889em;
+  /* Styles */
+  --line: solid 1px var(--lineColor);
+  --borderRadius: 10px;
+  /* Elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 8rem;
+}
+
+.purple {
+  /* Define colors as colors */
+  --green: #2cb67d;
+  --red: #ff5470;
+  --yellow: #fde24f;
+  --black: #010101;
+  --darkBlue: #00214d;
+  --grey: #94a1b2;
+  --white: #fffffe;
+  --purple: #7f5af0;
+  /* Define Colors intentions */
+  --background: var(--purple);
+  --textColor: var(--black);
+  --primary: var(--green);
+  --secondary: var(--white);
+  --danger: var(--red);
+  --lineColor: var(--green);
+  --line: solid 1px var(--lineColor);
+  --cardBg: var(--purple);
+  --headerBackground: var(--purple);
+  --footerBackground: var(--purple);
+  --linkColor: var(--white);
+  --blockQuote: var(--white);
+  --blockQuoteText: var(--black);
+}
+
+.burnt {
+  /* Define colors as colors */
+  --pink: #e53170;
+  --red: #f25f4c;
+  --yellow: #fde24f;
+  --black: black;
+  --dark: #0f0e17;
+  --grey: #a7a9be;
+  --white: #fffffe;
+  --orange: #ff8906;
+  /* Define Colors intentions */
+  --background: var(--black);
+  --textColor: var(--white);
+  --primary: var(--orange);
+  --secondary: var(pink);
+  --danger: var(--yellow);
+  --lineColor: var(--white);
+  --cardBg: var(--red);
+  --headerBackground: var(--black);
+  --footerBackground: var(--black);
+  --linkColor: var(--white);
+  --blockQuote: var(--white);
+  --blockQuoteText: var(--black);
+}
+
+.greyed {
+  /* Define colors as colors */
+  --pink: #f25042;
+  --black: #020826;
+  --greyOne: #716040;
+  --greyTwo: #8c7851;
+  --white: #fffffe;
+  --light: #f9f4ef;
+  /* Define Colors intentions */
+  --background: var(--light);
+  --textColor: var(--black);
+  --primary: var(--greyOne);
+  --secondary: var(--pink);
+  --danger: var(--pink);
+  --lineColor: var(--white);
+  --cardBg: var(--greyTwo);
+  --headerBackground: var(--light);
+  --footerBackground: var(--light);
+  --linkColor: var(--pink);
+  --blockQuote: var(--white);
+  --blockQuoteText: var(--black);
+}
+
+html {
+  font-size: var(--baseFontSize);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: var(--background);
+  color: var(--textColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  font-size: var(--p);
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small,
+.text_small {
+  font-size: var(--textSmall);
+}
+
+.highlight {
+  color: var(--secondary);
+}
+
+a {
+  color: var(--textColor);
+  text-decoration: none;
+  border-bottom: solid 2px var(--primary);
+}
+
+a:hover, a:focus {
+  border-top: solid 2px var(--primary);
+  color: var(--red);
+}
+
+blockquote {
+  background: var(--blockQuote);
+  margin: 10px;
+  padding: 2em;
+}
+
+blockquote a {
+  color: var(--blockQuoteText);
+}
+
+blockquote p {
+  color: var(--blockQuoteText);
+}
+
+label {
+  display: block;
+  font-size: var(--textSmall);
+}
+
+input,
+textarea {
+  padding: 4px 5px;
+  border: var(--line);
+  border-radius: 4px;
+}
+
+textarea {
+  height: 5rem;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: var(--grey);
+}
+
+:-ms-input-placeholder {
+  color: var(--grey);
+}
+
+::-ms-input-placeholder {
+  color: var(--grey);
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+select {
+  border: var(--line);
+}
+
+hr {
+  border-top: var(--line);
+}
+
+button {
+  --buttonColor: var(--primary);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: var(--textColor);
+  background-color: var(--buttonColor);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 25px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* Cancel class can mean anything with a cancel class, not just buttons. So button.class will just be buttons with class of cancel */
+}
+
+button:hover, button:focus {
+  background-color: var(--background);
+  border: solid 2px var(--secondary);
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+button[disabled]:hover {
+  background-color: var(--buttonColor);
+}
+
+button.cancel {
+  --buttonColor: var(--danger);
+  --textColor: white;
+}
+
+button.small {
+  font-size: var(--textSmall);
+}
+
+.image-container {
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  height: auto;
+  width: 40vw;
+}
+
+.image-container img {
+  border: solid 2px var(--primary);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.theme-button {
+  margin-top: 10px;
+}
+
+.theme-button + .theme-button {
+  margin-left: 10px;
+}
+
+.theme-button:hover, .theme-button:focus {
+  outline: 0.25em dashed var(--textColor);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.grid {
+  --gridCols: 2;
+  display: block;
+  -ms-grid-columns: (1fr)[var];
+      grid-template-columns: repeat(var(--gridCols), 1fr);
+}
+
+.cols-3 {
+  --gridCols: 3;
+}
+
+.flex {
+  --justifyContent: space-between;
+  display: block;
+  -webkit-box-pack: var(--justifyContent);
+      -ms-flex-pack: var(--justifyContent);
+          justify-content: var(--justifyContent);
+}
+
+.flex-around {
+  --justifyContent: space-around;
+}
+
+.card {
+  background: var(--cardBg);
+  border-radius: var(--borderRadius);
+  padding: 2em;
+  -webkit-box-shadow: var(--level-3);
+          box-shadow: var(--level-3);
+}
+
+/* First item will never have margin-top */
+.card > *:first-child {
+  margin-top: 0;
+}
+
+/* Last item will never have margin-bottom */
+.card > *:last-child {
+  margin-bottom: 0;
+}
+
+.layout {
+  margin: 0 auto;
+  padding: calc(3rem + var(--headerHeight)) var(--containerPadding);
+  width: 95%;
+}
+
+.container {
+  padding: var(--containerPadding);
+}
+
+.header-nav {
+  background: var(--headerBackground);
+  color: var(--textColor);
+  height: var(--headerHeight);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem var(--containerPadding);
+  position: absolute;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .header-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 var(--containerPadding);
+  }
+}
+
+.header-nav .logo {
+  font-family: var(--headingFont);
+  font-size: var(--h2);
+}
+
+.header-nav .logo a {
+  border: none;
+  -webkit-transition: 0.6s color;
+  transition: 0.6s color;
+}
+
+.header-nav .logo a:hover {
+  color: var(--primary);
+}
+
+.header-nav .logo a:focus {
+  border-top: solid 2px var(--secondary);
+  border-bottom: solid 2px var(--secondary);
+  color: var(--secondary);
+}
+
+footer {
+  --footerTextColor: var(--textColor);
+  background: var(--footerBackground);
+  color: var(--footerTextColor);
+  padding: 2rem var(--containerPadding);
+  text-align: center;
+}
+
+footer nav {
+  margin-top: 1.5em;
+}
+
+footer p {
+  margin-bottom: 0;
+  max-width: none;
+}
+
+nav a {
+  color: var(--textColor);
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+nav a + a {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 750px) {
+  :root {
+    --baseFontSize: 112.5%;
+    /*18px*/
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.showCurrentTheme {
+  background: var(--background);
+  color: var(--textColor);
+  border: 0.2rem dashed var(--primary);
+  border-radius: var(--borderRadius);
+  margin-left: 10px;
+  padding: 0.2rem 1.5rem;
+}
+
+.dark {
+  --background: var(--black);
+  --textColor: var(--white);
+  --textColor: var(--white);
+  --lineColor: var(--white);
+  --line: solid 1px var(--lineColor);
+  --linkColor: var(--white);
+  --headerBackground: var(--black);
+  --footerBackground: var(--black);
+  --blockQuote: var(--darkBlue);
+  --cardBg: var(--darkBlue);
+  --primary: var(--darkBlue);
+}
+
+.oled {
+  --black: #000;
+  --background: var(--black);
+  --textColor: var(--white);
+  --textColor: var(--white);
+  --lineColor: var(--green);
+  --line: solid 1px var(--lineColor);
+  --linkColor: var(--white);
+  --headerBackground: var(--black);
+  --footerBackground: var(--black);
+  --blockQuote: var(--darkBlue);
+  --cardBg: var(--darkBlue);
+}
+/*# sourceMappingURL=style.css.map */
