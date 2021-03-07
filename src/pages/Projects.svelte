@@ -143,6 +143,10 @@
             width: 100%;
         }
     }
+
+    .displayed-tags {
+        margin-left: 1em;
+    }
     
     </style>
     
@@ -164,8 +168,8 @@
                 <hr />
             </fieldset>
         </div>
+            <p class="displayed-tags">{displayedTags}</p>
             <ul>
-                <p>{displayedTags}</p>
                 {#each $projects as project}
                     {#if project.selected}
                         <li class="projects__project card">

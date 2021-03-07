@@ -4349,7 +4349,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (122:20) {#each $tags as tag}
+    // (125:20) {#each $tags as tag}
     function create_each_block_2(ctx) {
     	let div;
     	let input;
@@ -4393,13 +4393,13 @@ var app = (function () {
     		h: function hydrate() {
     			attr_dev(input, "id", input_id_value = /*tag*/ ctx[9].name);
     			attr_dev(input, "type", "checkbox");
-    			attr_dev(input, "class", "svelte-7h90i2");
-    			add_location(input, file$6, 123, 28, 3651);
+    			attr_dev(input, "class", "svelte-z5u56n");
+    			add_location(input, file$6, 126, 28, 3692);
     			attr_dev(label, "for", label_for_value = /*tag*/ ctx[9].name);
-    			attr_dev(label, "class", "svelte-7h90i2");
-    			add_location(label, file$6, 124, 28, 3764);
-    			attr_dev(div, "class", "tags-group__checkbox svelte-7h90i2");
-    			add_location(div, file$6, 122, 24, 3587);
+    			attr_dev(label, "class", "svelte-z5u56n");
+    			add_location(label, file$6, 127, 28, 3805);
+    			attr_dev(div, "class", "tags-group__checkbox svelte-z5u56n");
+    			add_location(div, file$6, 125, 24, 3628);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4447,14 +4447,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(122:20) {#each $tags as tag}",
+    		source: "(125:20) {#each $tags as tag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (135:20) {#if project.selected}
+    // (138:20) {#if project.selected}
     function create_if_block$2(ctx) {
     	let li;
     	let h3;
@@ -4591,28 +4591,28 @@ var app = (function () {
     		},
     		h: function hydrate() {
     			attr_dev(a0, "href", a0_href_value = /*project*/ ctx[6].link);
-    			add_location(a0, file$6, 136, 32, 4197);
-    			add_location(h3, file$6, 136, 28, 4193);
-    			attr_dev(p0, "class", "svelte-7h90i2");
-    			add_location(p0, file$6, 138, 32, 4372);
+    			add_location(a0, file$6, 139, 32, 4257);
+    			add_location(h3, file$6, 139, 28, 4253);
+    			attr_dev(p0, "class", "svelte-z5u56n");
+    			add_location(p0, file$6, 141, 32, 4432);
     			attr_dev(img, "class", "intro__image");
     			if (img.src !== (img_src_value = /*project*/ ctx[6].image)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = `Screenshot from ${/*project*/ ctx[6].name} app front page`);
-    			add_location(img, file$6, 140, 36, 4501);
-    			attr_dev(div0, "class", "image-container svelte-7h90i2");
-    			add_location(div0, file$6, 139, 32, 4434);
-    			attr_dev(div1, "class", " projects__image-and-description svelte-7h90i2");
-    			add_location(div1, file$6, 137, 28, 4292);
+    			add_location(img, file$6, 143, 36, 4561);
+    			attr_dev(div0, "class", "image-container svelte-z5u56n");
+    			add_location(div0, file$6, 142, 32, 4494);
+    			attr_dev(div1, "class", " projects__image-and-description svelte-z5u56n");
+    			add_location(div1, file$6, 140, 28, 4352);
     			attr_dev(a1, "href", a1_href_value = /*project*/ ctx[6].github);
-    			add_location(a1, file$6, 149, 31, 4934);
-    			add_location(p1, file$6, 149, 28, 4931);
-    			add_location(p2, file$6, 151, 32, 5093);
-    			attr_dev(div2, "class", "tags-container__tags svelte-7h90i2");
-    			add_location(div2, file$6, 152, 32, 5152);
+    			add_location(a1, file$6, 152, 31, 4994);
+    			add_location(p1, file$6, 152, 28, 4991);
+    			add_location(p2, file$6, 154, 32, 5153);
+    			attr_dev(div2, "class", "tags-container__tags svelte-z5u56n");
+    			add_location(div2, file$6, 155, 32, 5212);
     			attr_dev(div3, "class", "projects__tags-container");
-    			add_location(div3, file$6, 150, 28, 5021);
-    			attr_dev(li, "class", "projects__project card svelte-7h90i2");
-    			add_location(li, file$6, 135, 24, 4128);
+    			add_location(div3, file$6, 153, 28, 5081);
+    			attr_dev(li, "class", "projects__project card svelte-z5u56n");
+    			add_location(li, file$6, 138, 24, 4188);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -4705,14 +4705,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(135:20) {#if project.selected}",
+    		source: "(138:20) {#if project.selected}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:36) {#each project.tags as tag}
+    // (157:36) {#each project.tags as tag}
     function create_each_block_1(ctx) {
     	let span;
     	let t_value = /*tag*/ ctx[9] + "";
@@ -4732,8 +4732,8 @@ var app = (function () {
     			this.h();
     		},
     		h: function hydrate() {
-    			attr_dev(span, "class", "svelte-7h90i2");
-    			add_location(span, file$6, 154, 40, 5293);
+    			attr_dev(span, "class", "svelte-z5u56n");
+    			add_location(span, file$6, 157, 40, 5353);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -4751,14 +4751,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(154:36) {#each project.tags as tag}",
+    		source: "(157:36) {#each project.tags as tag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (134:16) {#each $projects as project}
+    // (137:16) {#each $projects as project}
     function create_each_block$1(ctx) {
     	let if_block_anchor;
     	let if_block = /*project*/ ctx[6].selected && create_if_block$2(ctx);
@@ -4800,7 +4800,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(134:16) {#each $projects as project}",
+    		source: "(137:16) {#each $projects as project}",
     		ctx
     	});
 
@@ -4826,10 +4826,10 @@ var app = (function () {
     	let t7;
     	let hr1;
     	let t8;
-    	let ul;
     	let p;
     	let t9;
     	let t10;
+    	let ul;
     	let each_value_2 = /*$tags*/ ctx[1];
     	validate_each_argument(each_value_2);
     	let each_blocks_1 = [];
@@ -4871,10 +4871,10 @@ var app = (function () {
     			t7 = space();
     			hr1 = element("hr");
     			t8 = space();
-    			ul = element("ul");
     			p = element("p");
     			t9 = text(/*displayedTags*/ ctx[0]);
     			t10 = space();
+    			ul = element("ul");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -4919,13 +4919,13 @@ var app = (function () {
     			fieldset_nodes.forEach(detach_dev);
     			div1_nodes.forEach(detach_dev);
     			t8 = claim_space(div2_nodes);
-    			ul = claim_element(div2_nodes, "UL", { class: true });
-    			var ul_nodes = children(ul);
-    			p = claim_element(ul_nodes, "P", {});
+    			p = claim_element(div2_nodes, "P", { class: true });
     			var p_nodes = children(p);
     			t9 = claim_text(p_nodes, /*displayedTags*/ ctx[0]);
     			p_nodes.forEach(detach_dev);
-    			t10 = claim_space(ul_nodes);
+    			t10 = claim_space(div2_nodes);
+    			ul = claim_element(div2_nodes, "UL", { class: true });
+    			var ul_nodes = children(ul);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].l(ul_nodes);
@@ -4936,24 +4936,25 @@ var app = (function () {
     			this.h();
     		},
     		h: function hydrate() {
-    			add_location(h2, file$6, 114, 8, 3169);
-    			add_location(h3, file$6, 115, 8, 3196);
-    			attr_dev(legend, "class", "svelte-7h90i2");
-    			add_location(legend, file$6, 118, 16, 3344);
-    			add_location(hr0, file$6, 119, 16, 3459);
-    			attr_dev(div0, "class", "tags-group__checkboxes svelte-7h90i2");
-    			add_location(div0, file$6, 120, 16, 3483);
-    			add_location(hr1, file$6, 128, 16, 3907);
+    			add_location(h2, file$6, 117, 8, 3210);
+    			add_location(h3, file$6, 118, 8, 3237);
+    			attr_dev(legend, "class", "svelte-z5u56n");
+    			add_location(legend, file$6, 121, 16, 3385);
+    			add_location(hr0, file$6, 122, 16, 3500);
+    			attr_dev(div0, "class", "tags-group__checkboxes svelte-z5u56n");
+    			add_location(div0, file$6, 123, 16, 3524);
+    			add_location(hr1, file$6, 131, 16, 3948);
     			attr_dev(fieldset, "class", "tags-group");
-    			add_location(fieldset, file$6, 117, 12, 3297);
+    			add_location(fieldset, file$6, 120, 12, 3338);
     			attr_dev(div1, "class", " container projects__tags");
-    			add_location(div1, file$6, 116, 8, 3244);
-    			add_location(p, file$6, 132, 16, 3990);
-    			attr_dev(ul, "class", "svelte-7h90i2");
-    			add_location(ul, file$6, 131, 12, 3968);
+    			add_location(div1, file$6, 119, 8, 3285);
+    			attr_dev(p, "class", "displayed-tags svelte-z5u56n");
+    			add_location(p, file$6, 134, 12, 4009);
+    			attr_dev(ul, "class", "svelte-z5u56n");
+    			add_location(ul, file$6, 135, 12, 4068);
     			attr_dev(div2, "class", "container projects");
     			attr_dev(div2, "id", "main");
-    			add_location(div2, file$6, 113, 4, 3117);
+    			add_location(div2, file$6, 116, 4, 3158);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -4979,10 +4980,10 @@ var app = (function () {
     			append_dev(fieldset, t7);
     			append_dev(fieldset, hr1);
     			append_dev(div2, t8);
-    			append_dev(div2, ul);
-    			append_dev(ul, p);
+    			append_dev(div2, p);
     			append_dev(p, t9);
-    			append_dev(ul, t10);
+    			append_dev(div2, t10);
+    			append_dev(div2, ul);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(ul, null);
