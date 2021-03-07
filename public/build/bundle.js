@@ -3230,28 +3230,28 @@ var app = (function () {
     			name: "default",
     			text: "#1b2d45",
     			background: "#fffffe",
-    			primary: "#00ebc7"
+    			primary: "#00dbc1"
     		},
     		{
     			id: 2,
     			name: "dark",
     			text: "#fffffe",
     			background: "#1b2d45",
-    			primary: "#00214d"
+    			primary: "#00dbc1"
     		},
     		{
     			id: 3,
     			name: "oled",
     			text: "#fffffe",
     			background: "#000",
-    			primary: "#00ebc7"
+    			primary: "#00dbc1"
     		},
     		{
     			id: 4,
     			name: "purple",
     			text: "#010101",
     			background: " #7f5af0",
-    			primary: "#2cb67d"
+    			primary: "#00dbc1"
     		},
     		{
     			id: 5,
@@ -3265,7 +3265,7 @@ var app = (function () {
     			name: "greyed",
     			text: "#020826",
     			background: "#f9f4ef",
-    			primary: "#716040"
+    			primary: "#c2c2c2"
     		}
     	];
 
