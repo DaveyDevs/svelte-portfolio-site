@@ -4,12 +4,17 @@
 
 <style type="text/scss">
 .skip-to-content-link {
+  background-color: var(--background);
   color: var(--textColor);
   left: 50%;
   padding: 1em;
   position: absolute;
   transform: translateY(-100%);
   z-index: 999;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
 }
 </style>
 

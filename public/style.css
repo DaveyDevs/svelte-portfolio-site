@@ -52,8 +52,8 @@
 
 .purple {
   /* Define colors as colors */
-  --green: #2cb67d;
-  --red: #ff5470;
+  --green: #00dbc1;
+  --red: #DB3000;
   --yellow: #fde24f;
   --black: #010101;
   --darkBlue: #00214d;
@@ -76,10 +76,13 @@
   --blockQuoteText: var(--black);
 }
 
+.purple .card {
+  border: 1px solid var(--lineColor);
+}
+
 .burnt {
   /* Define colors as colors */
-  --pink: #e53170;
-  --red: #f25f4c;
+  --red: #DB3000;
   --yellow: #fde24f;
   --black: black;
   --dark: #0f0e17;
@@ -90,10 +93,10 @@
   --background: var(--black);
   --textColor: var(--white);
   --primary: var(--orange);
-  --secondary: var(pink);
+  --secondary: var(--red);
   --danger: var(--yellow);
-  --lineColor: var(--white);
-  --cardBg: var(--red);
+  --lineColor: var(--orange);
+  --cardBg: var(--black);
   --headerBackground: var(--black);
   --footerBackground: var(--black);
   --linkColor: var(--white);
@@ -101,12 +104,16 @@
   --blockQuoteText: var(--black);
 }
 
+.burnt .card {
+  border: 1px solid var(--orange);
+}
+
 .greyed {
   /* Define colors as colors */
-  --pink: #f25042;
+  --red: #DB3000;
   --black: #020826;
-  --greyOne: #716040;
-  --greyTwo: #8c7851;
+  --greyOne: #c2c2c2;
+  --greyTwo: #817969;
   --white: #fffffe;
   --light: #f9f4ef;
   /* Define Colors intentions */
@@ -114,12 +121,12 @@
   --textColor: var(--black);
   --primary: var(--greyOne);
   --secondary: var(--pink);
-  --danger: var(--pink);
+  --danger: var(--red);
   --lineColor: var(--white);
   --cardBg: var(--greyTwo);
   --headerBackground: var(--light);
   --footerBackground: var(--light);
-  --linkColor: var(--pink);
+  --linkColor: var(--red);
   --blockQuote: var(--white);
   --blockQuoteText: var(--black);
 }
@@ -199,7 +206,7 @@ a {
 
 a:hover, a:focus {
   border-top: solid 2px var(--primary);
-  color: var(--red);
+  color: var(--secondary);
 }
 
 blockquote {
@@ -505,8 +512,7 @@ nav a + a {
   --headerBackground: var(--black);
   --footerBackground: var(--black);
   --blockQuote: var(--darkBlue);
-  --cardBg: var(--darkBlue);
-  --primary: var(--darkBlue);
+  --cardBg: var(--black);
 }
 
 .oled {
@@ -520,6 +526,10 @@ nav a + a {
   --headerBackground: var(--black);
   --footerBackground: var(--black);
   --blockQuote: var(--darkBlue);
-  --cardBg: var(--darkBlue);
+  --cardBg: var(--black);
+}
+
+.oled .card {
+  border: solid 1px var(--lineColor);
 }
 /*# sourceMappingURL=style.css.map */
