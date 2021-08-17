@@ -152,7 +152,7 @@
     
     <div class="container projects" id="main">
         <h2>Projects</h2>
-        <h3>(Both Personal and Volunteer)</h3>
+        <h3>Professional, Personal, and Volunteer</h3>
         <div class=" container projects__tags">
             <fieldset class="tags-group">
                 <legend>Select one or more tags below to filter the projects by the tech and tools used:</legend>

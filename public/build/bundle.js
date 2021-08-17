@@ -2418,11 +2418,27 @@ var app = (function () {
             name: "PHP",
             selected: false
         },
+        {
+            id: 11,
+            name: "Jekyll",
+            selected: false
+        },
     ]);
 
     const selectedTags = writable([]);
 
     const projects = writable([
+        {  
+            id: 1,
+            name: "Catan Pisco",
+            type: "Professional",
+            image: "../images/catan.jpg",
+            description: "Working as a two person team with Kom Creative, this is a complete redesign and implementation of Catan Pisco's official website. The static site generator Jekyll was used to structure the HTML and CSS for this project.",
+            link: "https://catanpisco.com/",
+            github: "https://github.com/KomCreative/catanpisco.com",
+            tags: ["Jekyll", "JavaScript", "HTML", "CSS", "Sass"],
+            selected: true,
+        },
         {  
             id: 1,
             name: "Dogs List",
@@ -4394,12 +4410,12 @@ var app = (function () {
     			attr_dev(input, "id", input_id_value = /*tag*/ ctx[9].name);
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "class", "svelte-z5u56n");
-    			add_location(input, file$6, 126, 28, 3692);
+    			add_location(input, file$6, 126, 28, 3700);
     			attr_dev(label, "for", label_for_value = /*tag*/ ctx[9].name);
     			attr_dev(label, "class", "svelte-z5u56n");
-    			add_location(label, file$6, 127, 28, 3805);
+    			add_location(label, file$6, 127, 28, 3813);
     			attr_dev(div, "class", "tags-group__checkbox svelte-z5u56n");
-    			add_location(div, file$6, 125, 24, 3628);
+    			add_location(div, file$6, 125, 24, 3636);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4591,28 +4607,28 @@ var app = (function () {
     		},
     		h: function hydrate() {
     			attr_dev(a0, "href", a0_href_value = /*project*/ ctx[6].link);
-    			add_location(a0, file$6, 139, 32, 4257);
-    			add_location(h3, file$6, 139, 28, 4253);
+    			add_location(a0, file$6, 139, 32, 4265);
+    			add_location(h3, file$6, 139, 28, 4261);
     			attr_dev(p0, "class", "svelte-z5u56n");
-    			add_location(p0, file$6, 141, 32, 4432);
+    			add_location(p0, file$6, 141, 32, 4440);
     			attr_dev(img, "class", "intro__image");
     			if (img.src !== (img_src_value = /*project*/ ctx[6].image)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = `Screenshot from ${/*project*/ ctx[6].name} app front page`);
-    			add_location(img, file$6, 143, 36, 4561);
+    			add_location(img, file$6, 143, 36, 4569);
     			attr_dev(div0, "class", "image-container svelte-z5u56n");
-    			add_location(div0, file$6, 142, 32, 4494);
+    			add_location(div0, file$6, 142, 32, 4502);
     			attr_dev(div1, "class", " projects__image-and-description svelte-z5u56n");
-    			add_location(div1, file$6, 140, 28, 4352);
+    			add_location(div1, file$6, 140, 28, 4360);
     			attr_dev(a1, "href", a1_href_value = /*project*/ ctx[6].github);
-    			add_location(a1, file$6, 152, 31, 4994);
-    			add_location(p1, file$6, 152, 28, 4991);
-    			add_location(p2, file$6, 154, 32, 5153);
+    			add_location(a1, file$6, 152, 31, 5002);
+    			add_location(p1, file$6, 152, 28, 4999);
+    			add_location(p2, file$6, 154, 32, 5161);
     			attr_dev(div2, "class", "tags-container__tags svelte-z5u56n");
-    			add_location(div2, file$6, 155, 32, 5212);
+    			add_location(div2, file$6, 155, 32, 5220);
     			attr_dev(div3, "class", "projects__tags-container");
-    			add_location(div3, file$6, 153, 28, 5081);
+    			add_location(div3, file$6, 153, 28, 5089);
     			attr_dev(li, "class", "projects__project card svelte-z5u56n");
-    			add_location(li, file$6, 138, 24, 4188);
+    			add_location(li, file$6, 138, 24, 4196);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -4733,7 +4749,7 @@ var app = (function () {
     		},
     		h: function hydrate() {
     			attr_dev(span, "class", "svelte-z5u56n");
-    			add_location(span, file$6, 157, 40, 5353);
+    			add_location(span, file$6, 157, 40, 5361);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -4853,7 +4869,7 @@ var app = (function () {
     			t0 = text("Projects");
     			t1 = space();
     			h3 = element("h3");
-    			t2 = text("(Both Personal and Volunteer)");
+    			t2 = text("Professional, Personal, and Volunteer");
     			t3 = space();
     			div1 = element("div");
     			fieldset = element("fieldset");
@@ -4892,7 +4908,7 @@ var app = (function () {
     			t1 = claim_space(div2_nodes);
     			h3 = claim_element(div2_nodes, "H3", {});
     			var h3_nodes = children(h3);
-    			t2 = claim_text(h3_nodes, "(Both Personal and Volunteer)");
+    			t2 = claim_text(h3_nodes, "Professional, Personal, and Volunteer");
     			h3_nodes.forEach(detach_dev);
     			t3 = claim_space(div2_nodes);
     			div1 = claim_element(div2_nodes, "DIV", { class: true });
@@ -4939,19 +4955,19 @@ var app = (function () {
     			add_location(h2, file$6, 117, 8, 3210);
     			add_location(h3, file$6, 118, 8, 3237);
     			attr_dev(legend, "class", "svelte-z5u56n");
-    			add_location(legend, file$6, 121, 16, 3385);
-    			add_location(hr0, file$6, 122, 16, 3500);
+    			add_location(legend, file$6, 121, 16, 3393);
+    			add_location(hr0, file$6, 122, 16, 3508);
     			attr_dev(div0, "class", "tags-group__checkboxes svelte-z5u56n");
-    			add_location(div0, file$6, 123, 16, 3524);
-    			add_location(hr1, file$6, 131, 16, 3948);
+    			add_location(div0, file$6, 123, 16, 3532);
+    			add_location(hr1, file$6, 131, 16, 3956);
     			attr_dev(fieldset, "class", "tags-group");
-    			add_location(fieldset, file$6, 120, 12, 3338);
+    			add_location(fieldset, file$6, 120, 12, 3346);
     			attr_dev(div1, "class", " container projects__tags");
-    			add_location(div1, file$6, 119, 8, 3285);
+    			add_location(div1, file$6, 119, 8, 3293);
     			attr_dev(p, "class", "displayed-tags svelte-z5u56n");
-    			add_location(p, file$6, 134, 12, 4009);
+    			add_location(p, file$6, 134, 12, 4017);
     			attr_dev(ul, "class", "svelte-z5u56n");
-    			add_location(ul, file$6, 135, 12, 4068);
+    			add_location(ul, file$6, 135, 12, 4076);
     			attr_dev(div2, "class", "container projects");
     			attr_dev(div2, "id", "main");
     			add_location(div2, file$6, 116, 4, 3158);

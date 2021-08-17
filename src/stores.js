@@ -53,11 +53,27 @@ export const tags = writable([
         name: "PHP",
         selected: false
     },
+    {
+        id: 11,
+        name: "Jekyll",
+        selected: false
+    },
 ]);
 
 export const selectedTags = writable([]);
 
 export const projects = writable([
+    {  
+        id: 1,
+        name: "Catan Pisco",
+        type: "Professional",
+        image: "../images/catan.jpg",
+        description: "Working as a two person team with Kom Creative, this is a complete redesign and implementation of Catan Pisco's official website. The static site generator Jekyll was used to structure the HTML and CSS for this project.",
+        link: "https://catanpisco.com/",
+        github: "https://github.com/KomCreative/catanpisco.com",
+        tags: ["Jekyll", "JavaScript", "HTML", "CSS", "Sass"],
+        selected: true,
+    },
     {  
         id: 1,
         name: "Dogs List",
