@@ -75,7 +75,7 @@ export const projects = writable([
         selected: true,
     },
     {  
-        id: 1,
+        id: 2,
         name: "Dogs List",
         type: "Personal",
         image: "../images/dogslist.jpg",
@@ -86,7 +86,7 @@ export const projects = writable([
         selected: true,
     },
     {  
-        id: 2,
+        id: 3,
         name: "Cannabis Equity Illinois",
         type: "Volunteer",
         image: "../images/ceic.jpg",
@@ -97,7 +97,7 @@ export const projects = writable([
         selected: true,
     },
     {
-        id: 3,
+        id: 4,
         name: "Bookmarks",
         type: "Personal",
         image: "images/bookmarks.jpg",
@@ -108,7 +108,7 @@ export const projects = writable([
         selected: true,
     },
     {
-        id: 4,
+        id: 5,
         name: "The Riverbank",
         type: "Personal",
         image: "../images/riverbank.jpg",
@@ -119,7 +119,7 @@ export const projects = writable([
         selected: true
     },
     {
-        id: 5,
+        id: 6,
         name: "This site!",
         type: "Personal",
         image: "../images/daveydevs.jpg",
