@@ -76,6 +76,17 @@ export const projects = writable([
     },
     {  
         id: 2,
+        name: "Chi Commons Map Form",
+        type: "Volunteer",
+        image: "../images/chicommons.jpg",
+        description: "Chi Commons Cooperative's Cooperative and Solidarity Map required a form so users could either add new or edit existing entities. This form was built with React and all submissions are currently sent to a Google Sheets file for members to validate. It also connects to a database to bring up exisiting entities to edit, and has reactive error states if there is a loading error or if required fields are not filled after submitting.",
+        link: "https://prod.chicommons.coop/",
+        github: "https://github.com/chicommons/maps",
+        tags: ["React", "JavaScript", "HTML", "CSS", "APIs"],
+        selected: true,
+    },
+    {  
+        id: 3,
         name: "Dogs List",
         type: "Personal",
         image: "../images/dogslist.jpg",
@@ -86,7 +97,7 @@ export const projects = writable([
         selected: true,
     },
     {  
-        id: 3,
+        id: 4,
         name: "Cannabis Equity Illinois",
         type: "Volunteer",
         image: "../images/ceic.jpg",
@@ -97,7 +108,7 @@ export const projects = writable([
         selected: true,
     },
     {
-        id: 4,
+        id: 5,
         name: "Bookmarks",
         type: "Personal",
         image: "images/bookmarks.jpg",
@@ -108,7 +119,7 @@ export const projects = writable([
         selected: true,
     },
     {
-        id: 5,
+        id: 6,
         name: "The Riverbank",
         type: "Personal",
         image: "../images/riverbank.jpg",
@@ -119,7 +130,7 @@ export const projects = writable([
         selected: true
     },
     {
-        id: 6,
+        id: 7,
         name: "This site!",
         type: "Personal",
         image: "../images/daveydevs.jpg",
